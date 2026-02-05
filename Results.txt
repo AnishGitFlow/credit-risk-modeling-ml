@@ -1,0 +1,487 @@
+================================================================================
+DF1 INFO
+================================================================================
+<class 'pandas.DataFrame'>
+RangeIndex: 51336 entries, 0 to 51335
+Data columns (total 26 columns):
+ #   Column                Non-Null Count  Dtype
+---  ------                --------------  -----
+ 0   PROSPECTID            51336 non-null  int64
+ 1   Total_TL              51336 non-null  int64
+ 2   Tot_Closed_TL         51336 non-null  int64
+ 3   Tot_Active_TL         51336 non-null  int64
+ 4   Total_TL_opened_L6M   51336 non-null  int64
+ 5   Tot_TL_closed_L6M     51336 non-null  int64
+ 6   pct_tl_open_L6M       51336 non-null  float64
+ 7   pct_tl_closed_L6M     51336 non-null  float64
+ 8   pct_active_tl         51336 non-null  float64
+ 9   pct_closed_tl         51336 non-null  float64
+ 10  Total_TL_opened_L12M  51336 non-null  int64
+ 11  Tot_TL_closed_L12M    51336 non-null  int64
+ 12  pct_tl_open_L12M      51336 non-null  float64
+ 13  pct_tl_closed_L12M    51336 non-null  float64
+ 14  Tot_Missed_Pmnt       51336 non-null  int64
+ 15  Auto_TL               51336 non-null  int64
+ 16  CC_TL                 51336 non-null  int64
+ 17  Consumer_TL           51336 non-null  int64
+ 18  Gold_TL               51336 non-null  int64
+ 19  Home_TL               51336 non-null  int64
+ 20  PL_TL                 51336 non-null  int64
+ 21  Secured_TL            51336 non-null  int64
+ 22  Unsecured_TL          51336 non-null  int64
+ 23  Other_TL              51336 non-null  int64
+ 24  Age_Oldest_TL         51336 non-null  int64
+ 25  Age_Newest_TL         51336 non-null  int64
+dtypes: float64(6), int64(20)
+memory usage: 10.2 MB
+
+================================================================================
+DF2 INFO
+================================================================================
+<class 'pandas.DataFrame'>
+RangeIndex: 51336 entries, 0 to 51335
+Data columns (total 62 columns):
+ #   Column                        Non-Null Count  Dtype
+---  ------                        --------------  -----
+ 0   PROSPECTID                    51336 non-null  int64
+ 1   time_since_recent_payment     51336 non-null  int64
+ 2   time_since_first_deliquency   51336 non-null  int64
+ 3   time_since_recent_deliquency  51336 non-null  int64
+ 4   num_times_delinquent          51336 non-null  int64
+ 5   max_delinquency_level         51336 non-null  int64
+ 6   max_recent_level_of_deliq     51336 non-null  int64
+ 7   num_deliq_6mts                51336 non-null  int64
+ 8   num_deliq_12mts               51336 non-null  int64
+ 9   num_deliq_6_12mts             51336 non-null  int64
+ 10  max_deliq_6mts                51336 non-null  int64
+ 11  max_deliq_12mts               51336 non-null  int64
+ 12  num_times_30p_dpd             51336 non-null  int64
+ 13  num_times_60p_dpd             51336 non-null  int64
+ 14  num_std                       51336 non-null  int64
+ 15  num_std_6mts                  51336 non-null  int64
+ 16  num_std_12mts                 51336 non-null  int64
+ 17  num_sub                       51336 non-null  int64
+ 18  num_sub_6mts                  51336 non-null  int64
+ 19  num_sub_12mts                 51336 non-null  int64
+ 20  num_dbt                       51336 non-null  int64
+ 21  num_dbt_6mts                  51336 non-null  int64
+ 22  num_dbt_12mts                 51336 non-null  int64
+ 23  num_lss                       51336 non-null  int64
+ 24  num_lss_6mts                  51336 non-null  int64
+ 25  num_lss_12mts                 51336 non-null  int64
+ 26  recent_level_of_deliq         51336 non-null  int64
+ 27  tot_enq                       51336 non-null  int64
+ 28  CC_enq                        51336 non-null  int64
+ 29  CC_enq_L6m                    51336 non-null  int64
+ 30  CC_enq_L12m                   51336 non-null  int64
+ 31  PL_enq                        51336 non-null  int64
+ 32  PL_enq_L6m                    51336 non-null  int64
+ 33  PL_enq_L12m                   51336 non-null  int64
+ 34  time_since_recent_enq         51336 non-null  int64
+ 35  enq_L12m                      51336 non-null  int64
+ 36  enq_L6m                       51336 non-null  int64
+ 37  enq_L3m                       51336 non-null  int64
+ 38  MARITALSTATUS                 51336 non-null  str
+ 39  EDUCATION                     51336 non-null  str
+ 40  AGE                           51336 non-null  int64
+ 41  GENDER                        51336 non-null  str
+ 42  NETMONTHLYINCOME              51336 non-null  int64
+ 43  Time_With_Curr_Empr           51336 non-null  int64
+ 44  pct_of_active_TLs_ever        51336 non-null  float64
+ 45  pct_opened_TLs_L6m_of_L12m    51336 non-null  float64
+ 46  pct_currentBal_all_TL         51336 non-null  float64
+ 47  CC_utilization                51336 non-null  float64
+ 48  CC_Flag                       51336 non-null  int64
+ 49  PL_utilization                51336 non-null  float64
+ 50  PL_Flag                       51336 non-null  int64
+ 51  pct_PL_enq_L6m_of_L12m        51336 non-null  float64
+ 52  pct_CC_enq_L6m_of_L12m        51336 non-null  float64
+ 53  pct_PL_enq_L6m_of_ever        51336 non-null  float64
+ 54  pct_CC_enq_L6m_of_ever        51336 non-null  float64
+ 55  max_unsec_exposure_inPct      51336 non-null  float64
+ 56  HL_Flag                       51336 non-null  int64
+ 57  GL_Flag                       51336 non-null  int64
+ 58  last_prod_enq2                51336 non-null  str
+ 59  first_prod_enq2               51336 non-null  str
+ 60  Credit_Score                  51336 non-null  int64
+ 61  Approved_Flag                 51336 non-null  str
+dtypes: float64(10), int64(46), str(6)
+memory usage: 24.3 MB
+
+================================================================================
+COMMON COLUMN NAMES BETWEEN DF1 AND DF2
+================================================================================
+PROSPECTID
+
+================================================================================
+NULL VALUES CHECK AFTER MERGE
+================================================================================
+0
+
+================================================================================
+CATEGORICAL COLUMNS
+================================================================================
+
+================================================================================
+CHI-SQUARE TEST P-VALUES
+================================================================================
+MARITALSTATUS --- 3.578180861038862e-233
+EDUCATION --- 2.6942265249737532e-30
+GENDER --- 1.907936100186563e-05
+last_prod_enq2 --- 0.0
+first_prod_enq2 --- 7.84997610555419e-287
+
+================================================================================
+VIF SEQUENTIAL CHECK
+================================================================================
+0 --- inf
+0 --- inf
+0 --- 11.320180023967996
+0 --- 8.363698035000336
+0 --- 6.520647877790928
+0 --- 5.149501618212625
+1 --- 2.611111040579735
+2 --- inf
+2 --- 1788.7926256209232
+2 --- 8.601028256477228
+2 --- 3.8328007921530785
+3 --- 6.0996533816467355
+3 --- 5.5813520096427585
+4 --- 1.9855843530987785
+5 --- inf
+5 --- 4.809538302819343
+6 --- 23.270628983464636
+6 --- 30.595522588100053
+6 --- 4.384346405965583
+7 --- 3.0646584155234238
+8 --- 2.898639771299253
+9 --- 4.377876915347324
+10 --- 2.2078535836958433
+11 --- 4.916914200506864
+12 --- 5.214702030064725
+13 --- 3.3861625024231476
+14 --- 7.840583309478997
+14 --- 5.255034641721438
+15 --- inf
+15 --- 7.380634506427232
+15 --- 1.4210050015175733
+16 --- 8.083255010190323
+16 --- 1.6241227524040114
+17 --- 7.257811920140003
+17 --- 15.59624383268298
+17 --- 1.8258570471324314
+18 --- 1.5080839450032664
+19 --- 2.172088834824578
+20 --- 2.623397553527229
+21 --- 2.2959970812106176
+22 --- 7.360578319196446
+22 --- 2.1602387773102563
+23 --- 2.8686288267891467
+24 --- 6.458218003637277
+24 --- 2.8474118865638265
+25 --- 4.753198156284083
+26 --- 16.22735475594825
+26 --- 6.424377256363877
+26 --- 8.887080381808687
+26 --- 2.3804746142952653
+27 --- 8.60951347651454
+27 --- 13.06755093547673
+27 --- 3.5000400566546555
+28 --- 1.9087955874813773
+29 --- 17.006562234161628
+29 --- 10.730485153719197
+29 --- 2.3538497522950266
+30 --- 22.104855915136433
+30 --- 2.7971639638512906
+31 --- 3.424171203217696
+32 --- 10.175021454450935
+32 --- 6.408710354561301
+32 --- 1.001151196262562
+33 --- 3.069197305397274
+34 --- 2.8091261600643724
+35 --- 20.249538381980678
+35 --- 15.864576541593774
+35 --- 1.8331649740532168
+36 --- 1.5680839909542037
+37 --- 1.9307572353811682
+38 --- 4.331265056645244
+39 --- 9.390334396150173
+
+================================================================================
+LAST ANOVA F-STATISTIC AND P-VALUE
+================================================================================
+F-statistic: 507.2927670529784
+P-value: 0.0
+
+================================================================================
+UNIQUE VALUES IN CATEGORICAL COLUMNS
+================================================================================
+MARITALSTATUS unique values: <StringArray>
+['Married', 'Single']
+Length: 2, dtype: str
+EDUCATION unique values: <StringArray>
+[          '12TH',       'GRADUATE',            'SSC',  'POST-GRADUATE',
+ 'UNDER GRADUATE',         'OTHERS',   'PROFESSIONAL']
+Length: 7, dtype: str
+GENDER unique values: <StringArray>
+['M', 'F']
+Length: 2, dtype: str
+last_prod_enq2 unique values: <StringArray>
+['PL', 'ConsumerLoan', 'AL', 'CC', 'others', 'HL']
+Length: 6, dtype: str
+first_prod_enq2 unique values: <StringArray>
+['PL', 'ConsumerLoan', 'others', 'AL', 'HL', 'CC']
+Length: 6, dtype: str
+
+================================================================================
+EDUCATION VALUE COUNTS AFTER ENCODING
+================================================================================
+EDUCATION
+3    18931
+2    11703
+1     9532
+4     1898
+Name: count, dtype: int64
+
+================================================================================
+DF INFO AFTER EDUCATION ENCODING
+================================================================================
+<class 'pandas.DataFrame'>
+RangeIndex: 42064 entries, 0 to 42063
+Data columns (total 43 columns):
+ #   Column                     Non-Null Count  Dtype
+---  ------                     --------------  -----
+ 0   pct_tl_open_L6M            42064 non-null  float64
+ 1   pct_tl_closed_L6M          42064 non-null  float64
+ 2   Tot_TL_closed_L12M         42064 non-null  int64
+ 3   pct_tl_closed_L12M         42064 non-null  float64
+ 4   Tot_Missed_Pmnt            42064 non-null  int64
+ 5   CC_TL                      42064 non-null  int64
+ 6   Home_TL                    42064 non-null  int64
+ 7   PL_TL                      42064 non-null  int64
+ 8   Secured_TL                 42064 non-null  int64
+ 9   Unsecured_TL               42064 non-null  int64
+ 10  Other_TL                   42064 non-null  int64
+ 11  Age_Oldest_TL              42064 non-null  int64
+ 12  Age_Newest_TL              42064 non-null  int64
+ 13  time_since_recent_payment  42064 non-null  int64
+ 14  max_recent_level_of_deliq  42064 non-null  int64
+ 15  num_deliq_6_12mts          42064 non-null  int64
+ 16  num_times_60p_dpd          42064 non-null  int64
+ 17  num_std_12mts              42064 non-null  int64
+ 18  num_sub                    42064 non-null  int64
+ 19  num_sub_6mts               42064 non-null  int64
+ 20  num_sub_12mts              42064 non-null  int64
+ 21  num_dbt                    42064 non-null  int64
+ 22  num_dbt_12mts              42064 non-null  int64
+ 23  num_lss                    42064 non-null  int64
+ 24  recent_level_of_deliq      42064 non-null  int64
+ 25  CC_enq_L12m                42064 non-null  int64
+ 26  PL_enq_L12m                42064 non-null  int64
+ 27  time_since_recent_enq      42064 non-null  int64
+ 28  enq_L3m                    42064 non-null  int64
+ 29  NETMONTHLYINCOME           42064 non-null  int64
+ 30  Time_With_Curr_Empr        42064 non-null  int64
+ 31  CC_Flag                    42064 non-null  int64
+ 32  PL_Flag                    42064 non-null  int64
+ 33  pct_PL_enq_L6m_of_ever     42064 non-null  float64
+ 34  pct_CC_enq_L6m_of_ever     42064 non-null  float64
+ 35  HL_Flag                    42064 non-null  int64
+ 36  GL_Flag                    42064 non-null  int64
+ 37  MARITALSTATUS              42064 non-null  str
+ 38  EDUCATION                  42064 non-null  int64
+ 39  GENDER                     42064 non-null  str
+ 40  last_prod_enq2             42064 non-null  str
+ 41  first_prod_enq2            42064 non-null  str
+ 42  Approved_Flag              42064 non-null  str
+dtypes: float64(5), int64(33), str(5)
+memory usage: 13.8 MB
+
+================================================================================
+DF_ENCODED INFO
+================================================================================
+<class 'pandas.DataFrame'>
+RangeIndex: 42064 entries, 0 to 42063
+Data columns (total 55 columns):
+ #   Column                        Non-Null Count  Dtype
+---  ------                        --------------  -----
+ 0   pct_tl_open_L6M               42064 non-null  float64
+ 1   pct_tl_closed_L6M             42064 non-null  float64
+ 2   Tot_TL_closed_L12M            42064 non-null  int64
+ 3   pct_tl_closed_L12M            42064 non-null  float64
+ 4   Tot_Missed_Pmnt               42064 non-null  int64
+ 5   CC_TL                         42064 non-null  int64
+ 6   Home_TL                       42064 non-null  int64
+ 7   PL_TL                         42064 non-null  int64
+ 8   Secured_TL                    42064 non-null  int64
+ 9   Unsecured_TL                  42064 non-null  int64
+ 10  Other_TL                      42064 non-null  int64
+ 11  Age_Oldest_TL                 42064 non-null  int64
+ 12  Age_Newest_TL                 42064 non-null  int64
+ 13  time_since_recent_payment     42064 non-null  int64
+ 14  max_recent_level_of_deliq     42064 non-null  int64
+ 15  num_deliq_6_12mts             42064 non-null  int64
+ 16  num_times_60p_dpd             42064 non-null  int64
+ 17  num_std_12mts                 42064 non-null  int64
+ 18  num_sub                       42064 non-null  int64
+ 19  num_sub_6mts                  42064 non-null  int64
+ 20  num_sub_12mts                 42064 non-null  int64
+ 21  num_dbt                       42064 non-null  int64
+ 22  num_dbt_12mts                 42064 non-null  int64
+ 23  num_lss                       42064 non-null  int64
+ 24  recent_level_of_deliq         42064 non-null  int64
+ 25  CC_enq_L12m                   42064 non-null  int64
+ 26  PL_enq_L12m                   42064 non-null  int64
+ 27  time_since_recent_enq         42064 non-null  int64
+ 28  enq_L3m                       42064 non-null  int64
+ 29  NETMONTHLYINCOME              42064 non-null  int64
+ 30  Time_With_Curr_Empr           42064 non-null  int64
+ 31  CC_Flag                       42064 non-null  int64
+ 32  PL_Flag                       42064 non-null  int64
+ 33  pct_PL_enq_L6m_of_ever        42064 non-null  float64
+ 34  pct_CC_enq_L6m_of_ever        42064 non-null  float64
+ 35  HL_Flag                       42064 non-null  int64
+ 36  GL_Flag                       42064 non-null  int64
+ 37  EDUCATION                     42064 non-null  int64
+ 38  Approved_Flag                 42064 non-null  str
+ 39  MARITALSTATUS_Married         42064 non-null  bool
+ 40  MARITALSTATUS_Single          42064 non-null  bool
+ 41  GENDER_F                      42064 non-null  bool
+ 42  GENDER_M                      42064 non-null  bool
+ 43  last_prod_enq2_AL             42064 non-null  bool
+ 44  last_prod_enq2_CC             42064 non-null  bool
+ 45  last_prod_enq2_ConsumerLoan   42064 non-null  bool
+ 46  last_prod_enq2_HL             42064 non-null  bool
+ 47  last_prod_enq2_PL             42064 non-null  bool
+ 48  last_prod_enq2_others         42064 non-null  bool
+ 49  first_prod_enq2_AL            42064 non-null  bool
+ 50  first_prod_enq2_CC            42064 non-null  bool
+ 51  first_prod_enq2_ConsumerLoan  42064 non-null  bool
+ 52  first_prod_enq2_HL            42064 non-null  bool
+ 53  first_prod_enq2_PL            42064 non-null  bool
+ 54  first_prod_enq2_others        42064 non-null  bool
+dtypes: bool(16), float64(5), int64(33), str(1)
+memory usage: 13.2 MB
+
+================================================================================
+DF_ENCODED DESCRIBE
+================================================================================
+       pct_tl_open_L6M  pct_tl_closed_L6M  Tot_TL_closed_L12M  pct_tl_closed_L12M  ...  pct_CC_enq_L6m_of_ever       HL_Flag       GL_Flag     EDUCATION
+count     42064.000000       42064.000000        42064.000000        42064.000000  ...            42064.000000  42064.000000  42064.000000  42064.000000
+mean          0.179032           0.097783            0.825504            0.160365  ...                0.064186      0.252235      0.056580      2.313689
+std           0.278043           0.210957            1.537208            0.258831  ...                0.225989      0.434300      0.231042      0.871070
+min           0.000000           0.000000            0.000000            0.000000  ...                0.000000      0.000000      0.000000      1.000000
+25%           0.000000           0.000000            0.000000            0.000000  ...                0.000000      0.000000      0.000000      2.000000
+50%           0.000000           0.000000            0.000000            0.000000  ...                0.000000      0.000000      0.000000      2.000000
+75%           0.333000           0.100000            1.000000            0.250000  ...                0.000000      1.000000      0.000000      3.000000
+max           1.000000           1.000000           33.000000            1.000000  ...                1.000000      1.000000      1.000000      4.000000
+
+[8 rows x 38 columns]
+
+================================================================================
+RANDOM FOREST CLASSIFIER
+================================================================================
+
+Accuracy: 0.7636990372043266
+
+Class p1:
+Precision: 0.8370457209847597
+Recall: 0.7041420118343196
+F1 Score: 0.7648634172469202
+
+Class p2:
+Precision: 0.7957519116397621
+Recall: 0.9282457879088206
+F1 Score: 0.856907593778591
+
+Class p3:
+Precision: 0.4423380726698262
+Recall: 0.21132075471698114
+F1 Score: 0.28600612870275793
+
+Class p4:
+Precision: 0.7178502879078695
+Recall: 0.7269193391642371
+F1 Score: 0.7223563495895703
+
+================================================================================
+XGBOOST CLASSIFIER
+================================================================================
+
+Accuracy: 0.78
+
+Class p1:
+Precision: 0.8260405549626467
+Recall: 0.7633136094674556
+F1 Score: 0.7934392619169657
+
+Class p2:
+Precision: 0.8257602862254025
+Recall: 0.9149653121902874
+F1 Score: 0.8680771039022097
+
+Class p3:
+Precision: 0.4662084765177549
+Recall: 0.3071698113207547
+F1 Score: 0.370336669699727
+
+Class p4:
+Precision: 0.7305034550839091
+Recall: 0.7191448007774538
+F1 Score: 0.7247796278158668
+
+================================================================================
+DECISION TREE CLASSIFIER
+================================================================================
+
+Accuracy: 0.71
+
+Class p1:
+Precision: 0.7238658777120316
+Recall: 0.7238658777120316
+F1 Score: 0.7238658777120316
+
+Class p2:
+Precision: 0.8085519922254616
+Recall: 0.8245787908820614
+F1 Score: 0.81648675171737
+
+Class p3:
+Precision: 0.34600158353127475
+Recall: 0.329811320754717
+F1 Score: 0.3377125193199382
+
+Class p4:
+Precision: 0.6518668012108981
+Recall: 0.6277939747327502
+F1 Score: 0.6396039603960396
+
+================================================================================
+XGBOOST WITH FEATURE SCALING
+================================================================================
+Accuracy: 0.78
+Class p1:
+Precision: 0.8260405549626467
+Recall: 0.7633136094674556
+F1 Score: 0.7934392619169657
+
+Class p2:
+Precision: 0.8257602862254025
+Recall: 0.9149653121902874
+F1 Score: 0.8680771039022097
+
+Class p3:
+Precision: 0.4662084765177549
+Recall: 0.3071698113207547
+F1 Score: 0.370336669699727
+
+Class p4:
+Precision: 0.7305034550839091
+Recall: 0.7191448007774538
+F1 Score: 0.7247796278158668
+
+================================================================================
+HYPERPARAMETER TUNING - XGBOOST
+================================================================================
+Best Hyperparameters: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200}
+Test Accuracy: 0.7780815404730774
